@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 3</title>
+</head>
+<body>
+    <script>
+
+        let esMayorDeEdad = true;
+        let tieneLicencia = false
+        let mensaje1 = "Acceso denegado NO ";
+        let mensaje2 = "Hola, Bienvenido a nuestra plataforma, puedes conducir.";
+        let mensajetotal = mensaje1 + "" + mensaje2;
+        console.log(mensajetotal);
+        
+
+        if (esMayorDeEdad && tieneLicencia){
+            console.log("Cumples con los requerimientos, !BIENVENIDO¡");
+        }else{
+            console.log("Hola, " + mensaje1 +  "cumples con todos los requerimientos.");
+        }
+
+        if (esMayorDeEdad || tieneLicencia){
+            console.log(mensaje2);
+        }else{
+            console.log("No puedes conducir, no cumples con todos los requerimientos");
+        }
+    </script>
+    
+</body>
+</html>
